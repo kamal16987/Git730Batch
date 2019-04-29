@@ -13,6 +13,12 @@ public class BaseClass {
 	
 	public void sendkeys() {
 		System.out.println("Method to type value in textbox");
+		
+		
+	}
+	
+	public void mouseoveractions() {
+    System.out.println("method to move element");
 	}
 
 }
