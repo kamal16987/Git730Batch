@@ -1,32 +1,21 @@
 package com.test.pack;
-
 import java.util.Scanner;
-
-
-
 public class BaseClass {
-
    public void launchBrowser() {
-
 		System.out.println("Method to launch brownser");
-	}
-	
+	}	
 	public void sendkeys() {
-		System.out.println("Method to type value in textbox");
-		
-		
-	}
-	
+		System.out.println("Method to type value in textbox");		
+	}	
 	public void mouseoveractions() {
     System.out.println("method to move element");
-	}
-	
+	}	
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 	String original,reverse="";
 	Scanner sc=new Scanner(System.in);	
     System.out.println("Enter the string to reverse");
 	original=sc.nextLine();
-	
 	int length=original.length();
 	for(int i=length-1;i>=0;i--)
 		reverse=reverse+original.charAt(i);
@@ -35,9 +24,8 @@ public class BaseClass {
 	}
 	else {
 		System.out.println("Given string is not a palindrome");
-
 	}
-	
+	// palindrome program by bhanuprasadh
 	String s="madam",reverse1="";
 	System.out.println(s);
 	System.out.println("Bhanu reverse palidrome program");
@@ -45,19 +33,27 @@ public class BaseClass {
 	for (int i = len - 1; i >=0 ; i--)
 	{
 		reverse1=reverse1+s.charAt(i);}
-if (s.equals(reverse1)) {System.out.println("palidrome");
+if (s.equals(reverse1)) {System.out.println("palidrome");	
+}		
+else {System.out.println("not palidrome");	
+}
+// palindrome program panneerselvamyourteam
+String originalpanneer, reversepanneer =""; 
+System.out.println("***panneer***");
+System.out.println("Enter a string/number to check if it is a palindrome"); 
+Scanner in = new Scanner(System.in);   
+originalpanneer = in.nextLine();   
+int lengthpanneer = originalpanneer.length();
+System.out.println( "The length of the entered string is"+lengthpanneer);
+for ( int i = lengthpanneer - 1; i>=0; i-- ) 
+   reversepanneer = reversepanneer + originalpanneer.charAt(i);
+
+if (originalpanneer.equals(reversepanneer))  
+   System.out.println("Entered string/number is a palindrome.");  
+else  
+   System.out.println("Entered string/number isn't a palindrome.");   
+} } 
 	
-}
-		
-else {System.out.println("not palidrome");
-	
-}
-}
-}
-
-
-
-
 
 
 
