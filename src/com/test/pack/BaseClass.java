@@ -52,7 +52,7 @@ if (originalpanneer.equals(reversepanneer))
    System.out.println("Entered string/number is a palindrome.");  
 else  
    System.out.println("Entered string/number isn't a palindrome.");   
-} }
+} 
 // palindrome program by gomathy
 public static void main1(String args[]){  
 	  int r,sum=0,temp;    
