@@ -2,9 +2,12 @@ package com.test.pack;
 
 import java.util.Scanner;
 
+
+
 public class BaseClass {
 
    public void launchBrowser() {
+
 		System.out.println("Method to launch brownser");
 	}
 	
@@ -35,11 +38,26 @@ public class BaseClass {
 
 	}
 	
-	}
+	String s="madam",reverse1="";
+	System.out.println(s);
+	System.out.println("Bhanu reverse palidrome program");
+	int len = s.length();
+	for (int i = len - 1; i >=0 ; i--)
+	{
+		reverse1=reverse1+s.charAt(i);}
+if (s.equals(reverse1)) {System.out.println("palidrome");
 	
-	}
+}
+		
+else {System.out.println("not palidrome");
+	
+}
+}
+}
 
 
 
 
- 
+
+
+
