@@ -18,7 +18,7 @@ public class BaseClass {
 	}
 
 
-//palindrome program by Gomathy
+//palindrome program by gomathy
 
 public static void main1(String args[])  
 {  
