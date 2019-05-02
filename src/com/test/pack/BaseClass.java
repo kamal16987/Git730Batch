@@ -19,7 +19,6 @@ public class BaseClass {
 
 
 //palindrome program by gomathy
-
 public static void main1(String args[])  
 {  
    String original, reverse = "";  
@@ -35,3 +34,4 @@ public static void main1(String args[])
       System.out.println("Entered string/number isn't a palindrome.");   
 }  
 }  
+
