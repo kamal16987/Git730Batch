@@ -6,16 +6,17 @@ import java.util.Scanner;
 
 public class BaseClass {
 
-   public void launchBrowser() {
 
-		System.out.println("Method to launch brownser");
-	}
+	
 	
 	public void sendkeys() {
 		System.out.println("Method to type value in textbox");
 		
-		
+
 	}
+
+
+	
 	
 	public void mouseoveractions() {
     System.out.println("method to move element");
@@ -52,6 +53,18 @@ if (s.equals(reverse1)) {System.out.println("palidrome");
 else {System.out.println("not palidrome");
 	
 }
+
+	String s1="jesh", reverse3="";
+	int lent = s1.length();
+	for (int i = lent-1; i >= 0; i--) {
+		reverse3=reverse3+s.charAt(i);
+		}
+	if (s.equals(reverse3)) {System.out.println("palidrome");
+		
+	}
+	else {System.out.println("not palidrome");
+		
+	}
 }
 }
 
