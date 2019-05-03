@@ -24,7 +24,7 @@ public class BaseClass {
 	}
 	else {
 		System.out.println("Given string is not a palindrome");
-	}
+	}{
 	// palindrome program by bhanuprasadh
 	String s="madam",reverse1="";
 	System.out.println(s);
@@ -36,7 +36,7 @@ public class BaseClass {
 if (s.equals(reverse1)) {System.out.println("palidrome");	
 }		
 else {System.out.println("not palidrome");	
-}
+}}{
 // palindrome program panneerselvamyourteam
 String originalpanneer, reversepanneer =""; 
 System.out.println("***panneer***");
@@ -52,7 +52,23 @@ if (originalpanneer.equals(reversepanneer))
    System.out.println("Entered string/number is a palindrome.");  
 else  
    System.out.println("Entered string/number isn't a palindrome.");   
-} } 
+}  {	
+//added pattern program panneer (right angled triangle)
+Scanner sc1=new Scanner(System.in);
+String original1= sc1.nextLine();
+String reversal1="";
+
+ int length1=original1.length();
+for(int i=0; i<=length1 - 1; i++){
+	reversal1=reversal1+original1.charAt(i);
+	System.out.println(reversal1);
+	
+
+		
+}
+}}}
+
+
 	
 
 
