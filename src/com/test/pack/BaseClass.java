@@ -1,42 +1,74 @@
-package com.test.pack;
-
 import java.util.Scanner;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 public class BaseClass {
-
-	public void displayName() {
-		System.out.println("ENTER YOUR NAME");
-		@SuppressWarnings("resource")
-		Scanner sc = new Scanner(System.in);
-		sc.nextLine();
+   public void launchBrowser() {
+		System.out.println("Method to launch brownser");
+	}	
+	public void sendkeys() {
+		System.out.println("Method to type value in textbox");		
+	}	
+	public void mouseoveractions() {
+    System.out.println("method to move element");
+	}	
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+	String original,reverse="";
+	Scanner sc=new Scanner(System.in);	
+    System.out.println("Enter the string to reverse");
+	original=sc.nextLine();
+	int length=original.length();
+	for(int i=length-1;i>=0;i--)
+		reverse=reverse+original.charAt(i);
+	if(reverse.equals(original)) {
+		System.out.println("Given string is palindrome");
 	}
-
-	public void launchBrowser() {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\HP\\Desktop\\kamal16987\\Git730Batch\\driver\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.google.com/");
-		WebElement UserName = driver.findElement(By
-				.xpath("//a[@class='gb_5d gb_1 gb_kb']"));
-		UserName.click();
-		WebElement txt = driver.findElement(By.xpath("//input[@type='email']"));
-		txt.sendKeys("PANNEERSELVAM");
-		
+	else {
+		System.out.println("Given string is not a palindrome");
 	}
+	// palindrome program by bhanuprasadh
+	String s="madam",reverse1="";
+	System.out.println(s);
+	System.out.println("Bhanu reverse palidrome program");
+	int len = s.length();
+	for (int i = len - 1; i >=0 ; i--)
+	{
+		reverse1=reverse1+s.charAt(i);}
+if (s.equals(reverse1)) {System.out.println("palidrome");	
+}		
+else {System.out.println("not palidrome");	
+}
+// palindrome program panneerselvamyourteam
+String originalpanneer, reversepanneer =""; 
+System.out.println("***panneer***");
+System.out.println("Enter a string/number to check if it is a palindrome"); 
+Scanner in = new Scanner(System.in);   
+originalpanneer = in.nextLine();   
+int lengthpanneer = originalpanneer.length();
+System.out.println( "The length of the entered string is"+lengthpanneer);
+for ( int i = lengthpanneer - 1; i>=0; i-- ) 
+   reversepanneer = reversepanneer + originalpanneer.charAt(i);
 
-	public static void main(String[] args) throws InterruptedException {
-		BaseClass bc = new BaseClass();
-		bc.displayName();
-
-		bc.launchBrowser();
-	}
-
+if (originalpanneer.equals(reversepanneer))  
+   System.out.println("Entered string/number is a palindrome.");  
+else  
+   System.out.println("Entered string/number isn't a palindrome.");   
+} 
+	// Gomathy
+{  
+	  int r,sum=0,temp;    
+	  int n=454;//It is the number variable to be checked for palindrome  
+	  
+	  temp=n;    
+	  while(n>0){    
+	   r=n%10;  //getting remainder  
+	   sum=(sum*10)+r;    
+	   n=n/10;    
+	  }    
+	  if(temp==sum)    
+	   System.out.println("palindrome number ");    
+	  else    
+	   System.out.println("not palindrome");    
+	}  
+	}  
 	
-	}
 
 
