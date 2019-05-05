@@ -1,4 +1,3 @@
-package com.test.pack;
 import java.util.Scanner;
 public class BaseClass {
    public void launchBrowser() {{
@@ -53,7 +52,24 @@ if (originalpanneer.equals(reversepanneer))
 else  
    System.out.println("Entered string/number isn't a palindrome.");   
 } 
-	 //Gomss
+	// Gomathy
+{  
+	  int r,sum=0,temp;    
+	  int n=454; 
+	  
+	  temp=n;    
+	  while(n>0){    
+	   r=n%10;  
+	   sum=(sum*10)+r;    
+	   n=n/10;    
+	  }    
+	  if(temp==sum)    
+	   System.out.println("palindrome number ");    
+	  else    
+	   System.out.println("not palindrome");    
+	}  
+	}  
+	//Gomss
 	 static int r, sum=0, temp;
 	 
 	 {
@@ -72,10 +88,3 @@ else
 				else {
 					System.out.println("not a palidrome");
 				}}}}
-				
-			
-
-	
-
-
-
