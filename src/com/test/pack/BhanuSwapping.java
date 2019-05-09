@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class BhanuSwapping {
 public static void main(String[] args) {
+	@SuppressWarnings("resource")
 	Scanner sc=new Scanner(System.in);
 	int num1=sc.nextInt();{
 		System.out.println("First number" +num1);

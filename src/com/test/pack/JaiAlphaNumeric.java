@@ -7,6 +7,7 @@ public class JaiAlphaNumeric {
 	public static void main(String[] args) {
 		String str;
 		String numbers;
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the alphanumeric string");
 		str = sc.nextLine();

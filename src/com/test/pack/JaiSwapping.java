@@ -6,6 +6,7 @@ public class JaiSwapping {
 
 	public static void main(String[] args) {
 		int a, b;
+		@SuppressWarnings("resource")
 		Scanner sw = new Scanner(System.in);
 		System.out.println("The numbers are");
 		a = sw.nextInt();

@@ -9,6 +9,7 @@ public class Geethaalphanumeric {
 		String str;
 		String numbers;
 		
+		@SuppressWarnings("resource")
 		Scanner sc=new Scanner(System.in);
 	    System.out.println("Enter the alphanumeric string:");
 	    str=sc.nextLine();

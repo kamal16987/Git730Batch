@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Geethaswap {
 	public static void main(String[] args) {
 		int x,y;
+		@SuppressWarnings("resource")
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the numbers:");
 		x=sc.nextInt();
