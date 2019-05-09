@@ -8,9 +8,12 @@ public class Alphanumeric {
 	        for (char c : carray) {
 	                if (Character.isDigit(c)) {
 	                        System.out.println(c);
+	                    
+	                        
 	                       
 	}
 	        }
+	        System.out.println("panneer");
 		}}
 
 	      
