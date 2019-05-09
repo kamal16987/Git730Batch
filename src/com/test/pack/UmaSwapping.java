@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class UmaSwapping {
 	public static void main(String[] args) {
 
+		@SuppressWarnings("unused")
 		int a, b,temp;
+		@SuppressWarnings("resource")
 		Scanner sw = new Scanner(System.in);
 		System.out.println("The numbers are");
 		a = sw.nextInt();

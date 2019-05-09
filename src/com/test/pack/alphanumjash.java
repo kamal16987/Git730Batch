@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class alphanumjash{
   public static void main(String[] args) {
-	  Scanner scan = new Scanner(new InputStreamReader(System.in));
+	  @SuppressWarnings("resource")
+	Scanner scan = new Scanner(new InputStreamReader(System.in));
 	    System.out.print("Enter alphaNumeric: ");
 	    String x = scan.next();
 	    String numStr = "";

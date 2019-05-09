@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class GomathySwap {
 	public static void main(String[] args) {
 		int a,b;
+		@SuppressWarnings("resource")
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the numbers");
 		a=sc.nextInt();

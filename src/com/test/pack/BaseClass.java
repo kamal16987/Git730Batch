@@ -1,6 +1,8 @@
+package com.test.pack;
+
 import java.util.Scanner;
 public class BaseClass {
-   public void launchBrowser() {{
+   public void launchBrowser() {
 		System.out.println("Method to launch brownser");
 	}	
 	public void sendkeys() {
@@ -68,11 +70,12 @@ else
 	  else    
 	   System.out.println("not palindrome");    
 	}  
-	}  
+	 
 	//Gomss
 	 static int r, sum=0, temp;
 	 
 	 {
+			@SuppressWarnings("resource")
 			Scanner sc=new Scanner(System.in);
 			{
 			int num=sc.nextInt();
